@@ -23,7 +23,6 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    
 }
 
 a {
@@ -32,7 +31,6 @@ a {
 }
 
 .section-title {
-    margin: 0;
     font-size: 22px;
 }
 
@@ -46,7 +44,7 @@ a {
     gap: 10px;
     align-items:start;
     width: 100%;
-}
+} /* TODO: To rfemove*/
 
 .card img {
     object-fit: cover;
@@ -54,11 +52,10 @@ a {
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-}
+} /* TODO: To rfemove*/
 
 .card-title {
     font-size: 16px;
-    
 }
 
 .euro {
@@ -88,8 +85,69 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     width: 65%;
-    gap: 20px;
+}
 
+.hebergements-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.hebergements-card-container a {
+    max-width: 250px;
+    width: 250px;
+}
+
+.hebergements-card-container a article {
+    width: 100%;
+}
+
+.hebergements-card {
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hebergements-card-image {
+    width: 100%;
+    height: 100px;
+}
+
+.hebergements-card-description {
+    padding: 10px;
+}
+
+.hebergements-card-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.hebergements-card-description .card-title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hebergements-card-description p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 5px;
+}
+
+.hebergements-card-description .card-rating {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -137,9 +195,6 @@ a {
     margin-bottom: 5px;
 }
 
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -186,6 +241,8 @@ a {
     flex-direction: row;
     justify-content: end;
     gap: 20px;
+    margin-top: -8px;
+
 
 }
 .infobar {
@@ -202,7 +259,7 @@ a {
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
-    border-radius: 20px;
+    border-radius: 18px;
     width: fit-content;
     font-family: sans-serif;
     overflow: hidden;
@@ -229,7 +286,8 @@ a {
     background-color: #0065FC; 
     color: white;
     border: none;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 11px 25px;
     font-weight: bold;
 }
 .activity {
@@ -255,8 +313,38 @@ a {
 .footer {
     background-color: var(--main-bg-color);
     padding: 20px;
-    margin-top: 50px;
-    flex-direction: column;
+    margin-top: 5px;
+    flex-direction: row;
     display: flex;
     align-items: start;
+    gap: 50px;
+    justify-content: space-between;
 }
+.filtre {
+    display: flex; 
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+    margin: 20px;
+    }
+.icon-filtre {
+    font-weight: 800;
+    align-items: center;
+    gap: 10px;  
+    display: flex;
+    flex-direction: row;
+  border: 2px solid grey;
+  border-radius: 30px; 
+  padding-right: 20px;
+  padding-left: 5px;
+}
+
+.icon-filtre img {
+    margin: 10px;
+
+    }
+.icon-filtre:hover {
+    background-color: var(--filter-bg-color);  
+     } 
+   
+   
