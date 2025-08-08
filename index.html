@@ -16,22 +16,26 @@
 
 <body>
     <div class="main-container">
-        <header>
-            <nav>
-                <div class="nav-links">
-                    <a href="#">hebergements</a>
-                    <a href="#">activités</a>
-                </div>          
-            </nav>
-            <img src="images/logo/Booki.png" alt="logo-booki" class="logo">
+        <header class="header-booki">
+            <div class="header-top">
+                <div class="header-image">
+                    <img src="images/logo/Booki.png" alt="logo-booki" class="logo"> 
+                </div>
+                <nav>
+                    <div class="nav-links">
+                        <a href="#">hebergements</a>
+                        <a href="#">activités</a>
+                    </div>          
+                </nav>
+            </div>
             <div class="nav-icons">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
             </div>  
                   
             <form class="search-bar">
-             <img class="searchping" src="./images/logo/Vector (2).png" alt="ping">
-             <input class="search1" type="search" placeholder="Marseille, France" aria-label="Rechercher un hébergement">
+                <img class="searchping" src="./images/logo/Vector (2).png" alt="ping">
+            <input class="search1" type="search" placeholder="Marseille, France" aria-label="Rechercher un hébergement">
             <button class="search2" aria-label="Rechercher un hébergement">Rechercher</button>
             </form>
             <div class ="filtre">
@@ -248,47 +252,59 @@
                     </div>
                 </section>
             </div>
-        </main>
-        <section class="activity-section">
-            <h2 class="footer-title">Activités à Marseille</h2>
-            <div class="activities-card-container">
-                <div class="footer-activities">
+        
+        <section class="activity">
+            <div class="activity-title">
+            <h2 class="section-title">Activités à Marseille</h2>
+            </div>
+            <div class="activity-card-container">
                     <a href="#">
-                        <article class="card-activity">
-                            <img src="./images/activites/reno-laithienne.jpg" alt="Image d'une activité à Marseille">
-                            <h3 class="card-title">Vieux Port</h3>
-                        </article>
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            </div>
+                            <div class="activity-card-description">
+                                <h3 class="card-title">Vieux Port</h3>
+                            </div>
+                        </article>    
                     </a>
-                </div>
-                <div class="footer-activities">
                     <a href="#">
-                        <article class="card-activity">
-                            <img src="./images/activites/paul-hermann.jpg" alt="Image d'une activité à Marseille">
-                            <h3 class="card-title">Fort de Pomègues</h3>
-                        </article>
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            </div>
+                            <div class="activity-card-description">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </article>    
                     </a>
-                </div>  
-                <div class="footer-activities">
                     <a href="#">
-                        <article class="card-activity">
-                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image d'une activité à Marseille">
-                            <h3 class="card-title">Parc National des Calanques</h3>
-                        </article>
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            </div>
+                            <div class="activity-card-description">
+                                <h3 class="card-title">Parc National des Calanques</h3>
+                            </div>
+                        </article>    
                     </a>
-                </div>  
-                <div class="footer-activities">
                     <a href="#">
-                        <article class="card-activity">
-                            <img src="./images/activites/florian-wehde.jpg" alt="Image d'une activité à Marseille">
-                            <h3 class="card-title">Parc National des Calanques</h3>
-                        </article>
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            </div>
+                            <div class="activity-card-description">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </article>    
                     </a>
                 </div>              
             </article>
             
         </section>
-
+        </main>
         <footer class="footer">  
+            <div class="footer-container">
             <div class="footer-box">
             <h3>À propos</h3>
             <p>Fonctionnement du site</p>
@@ -307,6 +323,7 @@
             <p>Centre d’aide</p>
             <p>Nous contacter</p>
             </div>
+            </div>    
         </footer>
     </div>
 </body>
