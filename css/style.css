@@ -177,7 +177,7 @@ a {
     width: 67%;
     padding-left: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -461,98 +461,239 @@ a {
     background-color: white;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-width: 50px;
+    min-height: 40px;
 
+}
+.filtre h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px; 
+  width: 100%;
+}
+.filtre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.icon-filtre {
+  min-width: 20%;
 }
 }
 /* Small devices (phones, less than 768px) */
 @media all and (min-width:320px) and (max-width: 767.98px) {
-    .header {
-        max-width: 768px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    .filtre {
-        flex-wrap: wrap;
-        display: flex;
-        gap: 10px;
-        max-width: 300px;
-    }    
-    .hebergements-and-populaires {
-        flex-direction: column;
-        display: flex;
-        justify-content: space-between;
-    }
-    .hebergements  {
-        max-width: 768px;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .populaires  {
-        max-width: 768px;
-        width: 100%;
-        margin-top: 40px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 30px;
-        margin-top: 0px;
-    }
-    .activity {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 20px;
-        gap: 20px 20px;
-    }
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-
-.activity-card-container .activity-card {
-    width: 210px;
-    height: 270px;
-    
-}
-.activity-card-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
+body, html, main {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    margin-bottom: 30px;
-}
-.activity-card-image img {
-    height: 210px;
+}    
+   .main-container { 
+    padding: 0 0px;
+    width: 100%;
+    
+    padding: 0;
+   }
+.header {
         
-}
-.footer {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 375px;
+        width: 100%;
+        }
+.logo {
+    width: 51px;
+    height: 19px;
+}        
+.header-booki {
     display: flex;
     flex-direction: column;
-    margin: 90px 0 0 0;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 375px;
+    max-width: 768px;
+}        
+.header-top {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px;
 }
-.activity-card-description {
-    padding: 10px;
-    border: white 1px solid;
-    border-radius: 0 0 20px 20px;
-    background-color: white;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.nav-icons {
+    display: flex;            /* active Flexbox */
+    flex-direction: column;   /* empile h1 et p verticalement */
+    align-items: flex-start;      /* centre horizontalement les enfants */
+    text-align: start;      /* centre le texte à l’intérieur du h1 et p */
+    padding: 20px;
+}
+.nav-icons h1 {
+    font-size: 24px; /* ou la taille que tu veux */
+    margin: 0; /* supprime les marges par défaut */
+}
+.nav-icons p {
+    font-size: 16px; /* ou la taille que tu veux */
+    margin: 0; /* supprime les marges par défaut */
+}
+
+
+.header-image {
+    margin-bottom: 40px;
+    margin: 0%;
 
 }
-    
+.nav-links {
+    margin-top: 20px;
+    min-width: 375px;
+    border-bottom: #F2F2F2 solid 2px;
+
+}
+.nav-links a {
+    min-width: 44%;
+    margin: 9px 0;
+
+}
+.nav-links :hover {
+    color: var(--main-color);
+    border-bottom: var(--main-color) solid 2px;
+    border-top: none;
+}
+.filtre h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px; 
+  width: 100%;
+}
+
+.filtre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.icon-filtre {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 5px;
+  min-width: 40%;
+ 
+}
+
+.icon-filtre img {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-filtre p {
+  margin: 0;
+}
+
+
+.search2 {
+        font-size: 0;
+        background-image: url(../images/filtres/loupe.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 19px;
+        border-radius: none;
+        border-radius: 15px;
+        width: 10%;
+        height: 60%;
+        border: none;
+        
+}
+.search-bar {
+    min-width: 90%;
+    min-height: 40%;
+}
+.searchping {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+}
+.searchping-container {
+    min-width: auto;
+    min-height: auto;
+}
+.search1 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+}
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 100%; 
     
 }
+.hebergements {
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+    border-radius: 0px;
+     order: 2; /* passe après populaires */
+    background-color: white;
+}
+ .populaires {
+    order: 1; /* populaires en premier */
+    width: 100%;
+    max-width: 100%;
+    }
+.hebergements-card {
+    width: 355px;
+    height: 208px;
+   
+  }
+.hebergements-card-container {
+    display: flex;
+    gap: 20px;
+    width: 375px;
+    margin-bottom: 30px;  
+    margin-top: -30px;
+  }
+.activity {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px;
+ }
+.activity-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin: none;
+ }
+ .activity-card {
+    width: 315px;
+    height: 200px;
+     }
+.activity-card-image {
+    width: 315px;
+    height: 141px;
+ }
+.activity-card-description {
+    width: 294px;
+}
+.footer-container {
+        flex-direction: column; /* passe les boxes en vertical */
+        align-items: center;    /* centre les boxes horizontalement */
+        margin-right: 0;        /* supprime le margin qui gênait */
+        gap: 20px;              /* espace entre les boxes */
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-box {
+        text-align: center;     /* optionnel : centre le texte */
+    }
+    }
